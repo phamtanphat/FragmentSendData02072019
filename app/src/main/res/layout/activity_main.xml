@@ -46,4 +46,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"/>
     </RadioGroup>
+    <LinearLayout
+        android:id="@+id/linearContainer"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>
