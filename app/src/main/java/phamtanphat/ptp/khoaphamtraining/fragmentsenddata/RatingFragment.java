@@ -14,18 +14,18 @@ public class RatingFragment extends Fragment {
 
 
     View view;
-    RatingBar ratingBar;
+//    RatingBar ratingBar;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_rating, container, false);
 
-        ratingBar = view.findViewById(R.id.ratingbar);
-
-        Bundle bundle = getArguments();
-        int numstar = bundle.getInt("numstar");
-
-        ratingBar.setRating(numstar);
+//        ratingBar = view.findViewById(R.id.ratingbar);
+//
+//        Bundle bundle = getArguments();
+//        int numstar = bundle.getInt("numstar");
+//
+//        ratingBar.setRating(numstar);
 
         return view;
     }

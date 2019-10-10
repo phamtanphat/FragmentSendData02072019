@@ -20,37 +20,12 @@ public class MainActivity extends AppCompatActivity {
         radioGroup = findViewById(R.id.radioGroup);
         fragmentManager = getSupportFragmentManager();
 
-        // 1 : Fragment chua ton tai trong activity
+
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                Fragment fragment = null;
-                Bundle bundle;
-                switch (i){
-                    case R.id.radioBad :
-                        fragment = new RatingFragment();
-                        bundle = new Bundle();
-                        bundle.putInt("numstar", 1);
-                        fragment.setArguments(bundle);
-                        break;
 
-                    case R.id.radioLike:
-                        fragment = new RatingFragment();
-                        bundle = new Bundle();
-                        bundle.putInt("numstar", 3);
-                        fragment.setArguments(bundle);
-                        break;
-                    case R.id.radioEnjoy:
-                        fragment = new RatingFragment();
-                        bundle = new Bundle();
-                        bundle.putInt("numstar", 5);
-                        fragment.setArguments(bundle);
-                        break;
-                }
-                fragmentTransaction.add(R.id.linearContainer,fragment);
-                fragmentTransaction.commit();
             }
         });
 
@@ -59,4 +34,33 @@ public class MainActivity extends AppCompatActivity {
 
         // 2 : Fragment da nam trong activity
     }
+
+    // 1 : Fragment chua ton tai trong activity
+//    private void listenCheckedChanged(){
+//        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//        Fragment fragment = null;
+//        Bundle bundle;
+//        switch (i){
+//            case R.id.radioBad :
+//                fragment = new RatingFragment();
+//                bundle = new Bundle();
+//                bundle.putInt("numstar", 1);
+//                fragment.setArguments(bundle);
+//                break;
+//            case R.id.radioLike:
+//                fragment = new RatingFragment();
+//                bundle = new Bundle();
+//                bundle.putInt("numstar", 3);
+//                fragment.setArguments(bundle);
+//                break;
+//            case R.id.radioEnjoy:
+//                fragment = new RatingFragment();
+//                bundle = new Bundle();
+//                bundle.putInt("numstar", 5);
+//                fragment.setArguments(bundle);
+//                break;
+//        }
+//        fragmentTransaction.add(R.id.linearContainer,fragment);
+//        fragmentTransaction.commit();
+//    }
 }

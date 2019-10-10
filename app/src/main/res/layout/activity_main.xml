@@ -53,4 +53,18 @@
         android:layout_below="@id/radioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+    <fragment
+        android:name="phamtanphat.ptp.khoaphamtraining.fragmentsenddata.InuputRatingFragment"
+        android:id="@+id/fragmentInuput"
+        tools:layout="@layout/fragment_inuput_rating"
+        android:layout_below="@id/linearContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <fragment
+        android:name="phamtanphat.ptp.khoaphamtraining.fragmentsenddata.RatingFragment"
+        android:id="@+id/fragmentRating"
+        tools:layout="@layout/fragment_rating"
+        android:layout_below="@id/fragmentInuput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>
